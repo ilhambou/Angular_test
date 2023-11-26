@@ -32,8 +32,8 @@ export class AppComponent implements OnInit {
     );
   }
 
-  /*public onAddEmloyee(addForm: NgForm): void {
-    document.getElementById('add-employee-form').click();
+  public onAddEmloyee(addForm: NgForm): void {
+  document.getElementById('add-employee-form')?.click();
     this.employeeService.addEmployee(addForm.value).subscribe(
       (response: Employee) => {
         console.log(response);
@@ -105,10 +105,10 @@ export class AppComponent implements OnInit {
       this.deleteEmployee = employee;
       button.setAttribute('data-target', '#deleteEmployeeModal');
     }
-    container.appendChild(button);
+    container?.appendChild(button);
     button.click();
   }
 
-*/
+
 
 }
